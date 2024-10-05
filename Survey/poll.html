@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Poll</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h2>Pollify</h2>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="poll.html">Create Poll</a></li>
+                    <li><a href="explore.html">View Polls</a></li>
+                </ul>
+            </nav>
+            <div class="wallet">
+                <button id="connect-wallet-btn">Connect Wallet</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="poll-section">
+            <h2>Create a New Poll</h2>
+            <form id="create-poll-form">
+                <label for="poll-title">Poll Title:</label>
+                <input type="text" id="poll-title" name="poll-title" required>
+                <label for="poll-description">Poll Description (optional):</label>
+                <textarea id="poll-description" name="poll-description"></textarea>
+                <label for="poll-options">Options:</label>
+                <input type="text" id="poll-option-1" name="poll-option" placeholder="Option 1" required>
+                <input type="text" id="poll-option-2" name="poll-option" placeholder="Option 2" required>
+                <button type="button" id="add-option-btn">Add Another Option</button>
+                <button type="submit">Create Poll</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Polls</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h2>Pollify</h2>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="poll.html">Create Poll</a></li>
+                    <li><a href="explore.html">View Polls</a></li>
+                </ul>
+            </nav>
+            <div class="wallet">
+                <button id="connect-wallet-btn">Connect Wallet</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Polls List -->
+    <main>
+        <section class="poll-list">
+            <h2>Available Polls</h2>
+            <div class="poll">
+                <h3>Which crypto do you think will dominate in 2025?</h3>
+                <ul>
+                    <li><input type="radio" name="poll1" value="Bitcoin"> Bitcoin</li>
+                    <li><input type="radio" name="poll1" value="Ethereum"> Ethereum</li>
+                    <li><input type="radio" name="poll1" value="Solana"> Solana</li>
+                </ul>
+                <button class="vote-btn">Vote</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
